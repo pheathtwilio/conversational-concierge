@@ -6,7 +6,7 @@ const express = require("express")
 const app=express()
 app.use(express.urlencoded({extended: true}))
 
-const projectId = "conciergebot-urms"
+const projectId = process.env.GOOGLE_PROJECT_ID
 
 // instantiate the twilio client
 const client = require("twilio")(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN)
