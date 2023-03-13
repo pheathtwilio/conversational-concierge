@@ -24,9 +24,9 @@ Conversational Concierge - Retail/Hospitality
 
 ## Architecture
 
+(https://github.com/pheathtwilio/conversational-concierge/blob/main/img/Proactive.png)
 
-
-
+(https://github.com/pheathtwilio/conversational-concierge/blob/main/img/Dialogflow.png)
 
 ## Twilio APIs
 
