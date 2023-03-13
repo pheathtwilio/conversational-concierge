@@ -15,10 +15,6 @@ Free up time for your front of house staff to focus on the critical service issu
 
 Conversational Concierge - Retail/Hospitality
 
-## Demo script
-
-
-
 ## Demo setup steps
 
 ### Prerequisites 
@@ -105,6 +101,50 @@ npm start
 ```
 ngrok http --region=us --hostname=<username>.ngrok.io 3000
 ```
+
+### Step 10: Create Intents in the Dialog Flow Project
+
+![Intents](/img/intents.png "Intents")
+
+Create some meaningful intents in the dialogflow project like the example above
+
+### Step 11: Send a welcome SMS
+
+This can be achieved a number of ways, for this particular setup you can run the following code:
+
+```
+curl -X POST "https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Messages.json" \
+--data-urlencode "Body=Hi Paul, Welcome to Owl Hotels. Please ask me if you have any questions" \
+--data-urlencode "From=TWILIO_PHONE_NUMBER" \
+--data-urlencode "To=CUSTOMER_PHONE_NUMBER" \
+-u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN
+```
+
+## Demo Script
+
+### Part 1 - The Introduction
+
+ Imagine you are a customer at a hotel, you just checked in and you were busy so you neglected to listen to some of the information told to you at the front desk. So you pickup your phone and you immediately see a text welcoming you to the hotel and asking you if you have any questions.
+
+![Introduction](/img/demo-1.png "Introduction")
+
+With the power of Twilio SMS, Conversations and Google Dialogflow you have an intelligent chatbot that is easy to implement, can scale and can begin a return on investment immediately. So you ask it, where is breakfast?
+
+![Breakfast](/img/demo-2.png "Breakfast")
+
+Then it responds and will tell you when and where breakfast will be.
+
+### Part 2 - The Humour
+
+![Hungry](/img/demo-3.png "Hungry")
+
+It can even have a humorous side built in when you tell it I am hungry.
+
+### Part 3 - The Closer
+
+![Closer](/img/demo-4.png "Closer")
+
+And finally, I decide to end the conversation for now by telling it, I am good. It responds! As the customer, I feel great. I have just had a seamless transaction that was proactive, personal and automated. 
 
 ## Architecture
 
