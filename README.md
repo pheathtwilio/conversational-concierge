@@ -19,9 +19,38 @@ Conversational Concierge - Retail/Hospitality
 
 
 
-
-
 ## Demo setup steps
+
+### Prerequisites 
+
+- A Twilio Account
+- A Twilio phone number 
+- The Twilio CLI
+- A Google Cloud Platform Account
+
+### Step 1: Setup Twilio 
+
+- Buy a phone number in the console
+- Configure Twilio Conversations to setup the Default Conversations Service
+
+### Step 2: Setup Code
+
+- Pull this code from github
+- Setup in development directory
+
+### Step 3: Store values in .env file
+
+- Create a .env file
+- Store TWILIO_ACCOUNT_SID key value pair (as copied from the console)
+- Store TWILIO_AUTH_TOKEN key value pair (as taken from the console)
+
+### Step 4: Install Node Module Dependencies
+
+- run npm-install
+
+### Step 5: Setup Google Project
+
+-- Navigate to the Google Dialogflow Console 
 
 
 ## Architecture
