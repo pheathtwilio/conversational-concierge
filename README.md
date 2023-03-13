@@ -23,10 +23,9 @@ Conversational Concierge - Retail/Hospitality
 
 
 ## Architecture
+![Proactive SMS flow](/img/Proactive.png "Proactive SMS flow")
 
-(https://github.com/pheathtwilio/conversational-concierge/blob/main/img/Proactive.png)
-
-(https://github.com/pheathtwilio/conversational-concierge/blob/main/img/Dialogflow.png)
+![Twilio Conversations and Google Dialogflow Integration](/img/Dialogflow.png "Twilio Conversations and Google Dialogflow Integration")
 
 ## Twilio APIs
 
